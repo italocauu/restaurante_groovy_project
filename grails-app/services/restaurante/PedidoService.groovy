@@ -75,7 +75,7 @@ class PedidoService {
         // Guarda a soma total calculada no atributo do Pedido
         novoPedido.valorTotal = somaTotal
 
-        // 7. Salva no Banco de Dados
+        // 7. Salva no Banco deg Dados
         // Como o ItemPedido tem o 'belongsTo = [Pedido]', ao salvar o Pedido, 
         // o Grails automaticamente vai dar os INSERTS em todos os Itens também!
         novoPedido.save(flush: true, failOnError: true)
